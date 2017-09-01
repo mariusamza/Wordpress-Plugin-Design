@@ -9,13 +9,13 @@ switch($a) {
                     $paragrafe = $atts['paragrafe']; 
                 }
 
-                if(empty($atts['lungime'])) {
-                    $lungime = 'medium';
+                if(empty($atts['lungime_paragraf'])) {
+                    $lungime_paragraf = 'medium';
                 } else {
-                    $lungime = $atts['lungime']; 
+                    $lungime_paragraf = $atts['lungime_paragraf']; 
                 }
             
-                $ipsum = file_get_contents('https://loripsum.net/api/'.$paragrafe.'/'.$lungime);
+                $ipsum = file_get_contents('https://loripsum.net/api/'.$paragrafe.'/'.$lungime_paragraf);
 
                 echo $ipsum;
             

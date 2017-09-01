@@ -27,8 +27,9 @@ function generate_ipsum( $atts ) {
         } 
     
     } else {
-        $a = $tip;
-        include(plugin_dir_path( __FILE__ ).'switch.php');   
+        foreach($tip as $a) {
+            include(plugin_dir_path( __FILE__ ).'switch.php');
+        } 
     }
 
 }
