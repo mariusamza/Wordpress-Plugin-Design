@@ -53,18 +53,9 @@ function generate_ipsum( $atts ) {
                     $latime = $atts['latime']; 
                 }
 
-
                 echo '<img src="http://placehold.it/'.$lungime.'x'.$latime.'">';
             
-            break;
-            
+            break;     
     }
-    
-    
-    
-    
-    
-    
-    
 
 }
